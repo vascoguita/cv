@@ -11,9 +11,6 @@
 %% version 2003/12/01 or later.
 %%%%%%%%%%%%%%%%
 
-%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
-% \documentclass[10pt,a4paper,normalphoto]{altacv}
-
 \documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
 %% AltaCV uses the fontawesome5 and packages.
 %% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
@@ -66,44 +63,17 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-%% Use (and optionally edit if necessary) this .cfg if you
-%% want to use an author-year reference style like APA(6)
-%% for your publication list
-\input{pubs-authoryear}
-
-%% Use (and optionally edit if necessary) this .cfg if you
-%% want an originally numerical reference style like IEEE
-%% for your publication list
-% \input{pubs-num}
-
-%% sample.bib contains your publications
-\addbibresource{sample.bib}
-
 \begin{document}
 \name{Vasco Guita}
 \tagline{Computer Science and Engineering M.Sc. Student}
-%% You can add multiple photos on the left or right
 \photoR{2.8cm}{vasco}
-% \photoL{2.5cm}{Yacht_High,Suitcase_High}
 
-\personalinfo{%
-  % Not all of these are required!
+\personalinfo{
   \email{vasco@guita.org}
   \phone{+351 961 472 807}
-  %\mailaddress{Åddrésş, Street, 00000 Cóuntry}
   \location{Lisbon, Portugal}
-  %\homepage{www.homepage.com}
-  %\twitter{@twitterhandle}
   \linkedin{vasco-guita}
   \github{vascoguita}
-  %\orcid{0000-0000-0000-0000}
-  %% You can add your own arbitrary detail with
-  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
-  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
-  %% Or you can declare your own field with
-  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
-  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
-  % \gitlab{your_id}
 }
 
 \makecvheader
@@ -171,40 +141,6 @@
 
 \medskip
 
-%\cvsection{A Day of My Life}
-
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-%\wheelchart{1.5cm}{0.5cm}{%
-%  6/8em/accent!30/{Sleep,\\beautiful sleep},
-%  3/8em/accent!40/Hopeful novelist by night,
-%  8/8em/accent!60/Daytime job,
-%  2/10em/accent/Sports and relaxation,
-%  5/6em/accent!20/Spending time with family
-%}
-
-% use ONLY \newpage if you want to force a page break for
-% ONLY the current column
-%\newpage
-
-%\cvsection{Publications}
-
-%\nocite{*}
-
-%\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-%\divider
-
-%\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}},type=article]
-
-%\divider
-
-%\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
-
-%% Switch to the right column. This will now automatically move to the second
-%% page if the content is too long.
-
 \cvsection{Skills}
 
 \medskip
@@ -245,24 +181,6 @@
 \cvevent{Model Airplane}{}{2014 -- Ongoing}{}
 \small Build Hawker Hurricane model with balsa wood.
 
-%\cvsection{My Life Philosophy}
-
-%\begin{quote}
-%``Something smart or heartfelt, preferably in one sentence.''
-%\end{quote}
-
-%\cvsection{Most Proud of}
-
-%\cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}
-
-%\divider
-
-%\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
-
-%\divider
-
-%\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
-
 \cvsection{Languages}
 
 \cvskill{Portuguese}{5}
@@ -275,26 +193,6 @@
 \divider
 
 \cvskill{Polish}{1}
-
-%% Yeah I didn't spend too much time making all the
-%% spacing consistent... sorry. Use \smallskip, \medskip,
-%% \bigskip, \vspace etc to make adjustments.
-%\medskip
-
-
-
-% \divider
-
-%\cvsection{Referees}
-
-% \cvref{name}{email}{mailing address}
-%\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-%{Address Line 1\\Address line 2}
-
-%\divider
-
-%\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
-%{Address Line 1\\Address line 2}
 
 \cvsection{Volunteering}
 
