@@ -13,4 +13,5 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: pdf
+          args: -jobname=cv
           path: main.pdf
