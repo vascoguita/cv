@@ -10,7 +10,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: main.tex
-          args: -jobname=cv
+          post_compile: "mv main.pdf cv.pdf"
       - uses: actions/upload-artifact@v3
         with:
           name: pdf
