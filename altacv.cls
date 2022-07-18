@@ -262,15 +262,26 @@
 }
 
 % v1.1.4: fixes inconsistent font size
-\newcommand{\cvevent}[4]{%
+\newcommand{\cvevent}[3]{%
   {\large\color{emphasis}#1\par}
   \smallskip\normalsize
-  \ifstrequal{#2}{}{}{
-  \textbf{\color{accent}#2}\par
-  \smallskip}
-  \ifstrequal{#3}{}{}{{\small\faCalendar~\parbox[]{0.7\linewidth}{#3}}}%
-  \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faMapMarker~#4}}}\par
-  \medskip\normalsize
+  \ifstrequal{#2}{}{}{\setlength{\tabcolsep}{0pt}
+  \renewcommand{\arraystretch}{0}
+  \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}l}
+    \textbf{\color{accent}#2} &
+    \ifstrequal{#3}{}{}{{\small\faCalendar~#3}}
+  \end{tabular*}
+  \par\medskip\normalsize}
+}
+
+\newcommand{\cvsmallevent}[2]{
+  \setlength{\tabcolsep}{0pt}
+  \renewcommand{\arraystretch}{0}
+  \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}l}
+    \large\color{emphasis}#1 &
+    \ifstrequal{#2}{}{}{{\small\faCalendar~#2}}
+  \end{tabular*}
+  \par\medskip\normalsize
 }
 
 \newcommand{\cvachievement}[3]{%
