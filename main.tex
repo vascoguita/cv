@@ -71,7 +71,7 @@
 
 \personalinfo{
   \email{vasco@guita.org}
-  \phone{+33 766 681 446}
+  \phone{+41 78 329 55 20}
   \location{Geneva, Switzerland}
   \linkedin{vasco-guita}
   \github{vascoguita}
@@ -89,18 +89,41 @@
 \begin{paracol}{2}
 \cvsection{Experience}
 
-\cvevent{Software Engineer -- Project Associate}{CERN}{Oct 2021 -- Present}
+\cvevent{Software Engineer -- ORIGIN}{BE-CEM-IN, CERN}{Jan 2025 -- Present}
 \begin{itemize}
+\item Package \textbf{Debian} drivers, libraries and tools for \textbf{Front End Computers}
+\item Build \textbf{Docker} images for compiling, testing and packaging drivers for \textbf{FECOS} (\textbf{Debian}-based OS)
+\item Map \textbf{VME SBC} cards to \textbf{PCI} devices -- \textbf{PMC} and \textbf{XMC}
+\item Configure \textbf{LUMENS} (CERN's \textbf{Systemd} wrapper) in \textbf{CCDE}  
+\item Deploy \textbf{HIL} infrastructure with \textbf{Terraform}, \textbf{Ansible}, \\ \textbf{OpenStack} and \textbf{S3}
+\end{itemize}
+\divider
+
+\cvevent{Software Engineer -- ORIGIN}{BE-CEM-EDL, CERN}{Apr 2023 -- Dec 2024}
+\begin{itemize}
+\item Modernize \textbf{Open Hardware Repository (OHR)} in \\ collaboration with \textbf{OSPO} -- migrate projects to GitLab, decommission self-hosted GitLab server, develop website in \textbf{Python}, \textbf{Hugo} and \textbf{GitHub Pages} and setup GitLab \textbf{OAuth2} authentication in \textbf{Discourse}
+\item Introduce management tools to the section leader and arrange cross-section meetings to share project and team coordination methods
+\item Develop \textbf{Evergreen} to streamline software and gateware workflows with \textbf{GitLab CI/CD}, \textbf{Bash}/\textbf{Python} automation, \textbf{GitLab Runners}, \textbf{Docker} and \textbf{Xilinx Vivado/ISE}
+\item Contribute to \textbf{SAMbuCa} -- write \textbf{Tcl} scripts to synthesize \textbf{gateware} and build boot images with \textbf{Xilinx Vivado}, write \textbf{firmware} and \textbf{PXIe} \textbf{Linux drivers} in \textbf{C} and \textbf{Python} and test signal acquisition and motor control \textbf{FMCs} on \textbf{Spexi7u} boards with oscilloscopes and thermal cameras
+\end{itemize}
+\divider
+
+\cvevent{Software Engineer -- PJAS}{IT-SD-GSS, CERN}{Oct 2021 -- Mar 2023}
+\begin{itemize}
+\item Instrument \textbf{REVA} with \textbf{OpenTelemetry} in \textbf{Go}
+\item Deploy \textbf{Jaeger tracing} with \textbf{Elasticsearch} and \textbf{Kibana} dashboards for \textbf{CERNBox} and setup \textbf{Jaeger Query} with \textbf{CERN SSO}
+\item Present \emph{Jaeger tracing at CERN} at \textbf{IT Lightning Talks \#22}
 \item Develop IFC viewer plugin for \textbf{ownCloud} in \textbf{Vue.js}
 \item DevOps with \textbf{Puppet}, \textbf{Foreman}, \textbf{OpenStack} and \textbf{ai-tools}
-\item Build/publish \textbf{RPMs} for \textbf{yum} with \textbf{Gitlab CI/CD}
+\item Package \textbf{RPMs} for \textbf{yum} with \textbf{Gitlab CI/CD}
+\item Setup \textbf{GitHub Actions} for \textbf{CS3Org} projects -- code quality, releases, \textbf{Docker} builds, security scans and tests with \textbf{Docker Compose}, \textbf{EOS}, \textbf{Ceph} and \textbf{Redis}
+\item Manage \textbf{Drone CI} and deploy \textbf{GitHub} self-hosted runners
+\item Create \textbf{EOS} \textbf{Docker} image with \textbf{MQ}, \textbf{QDB}, \textbf{MGM} and \textbf{FST}
 \item \textbf{ROTA} -- \textbf{CERNBox} and \textbf{EOS} support
-\item Instrument \textbf{REVA} with \textbf{OpenTelemetry} in \textbf{Go}
-\item Deploy \textbf{Jaeger tracing} with \textbf{Elasticsearch} for \textbf{CERNBox}
-\item Present \emph{Jaeger tracing at CERN} at \textbf{IT Lightning Talks \#22}
+\item Recover \textbf{EOS} files with \textbf{CBack} -- \textbf{Restic}, \textbf{S3}, \textbf{Ceph}
 \end{itemize}
 
-\divider
+\switchcolumn
 
 \cvevent{Software Developer}{MARETEC}{Feb 2021 -- Sep 2021}
 \begin{itemize}
@@ -108,7 +131,7 @@
 \end{itemize}
 \divider
 
-\cvevent{Lecturer}{IST, Universidade de Lisboa}{Feb 2019 -- Feb 2021}
+\cvevent{Teaching Assistant}{IST, Universidade de Lisboa}{Feb 2019 -- Feb 2021}
 \faAward \hspace{0.05cm} \textbf{Excellence in Teaching Award}
 \smallskip
 \begin{itemize}
@@ -118,11 +141,9 @@
 \end{itemize}
 \divider
 
-\cvevent{System Administrator}{IST, Universidade de Lisboa}{Dec 2017 -- Sept 2019}
+\cvevent{System Administrator}{IST, Universidade de Lisboa}{Dec 2017 -- Sep 2019}
 \begin{itemize}
-\item Deploy/manage \textbf{libvirt}+\textbf{QEMU}+\textbf{KVM} hypervisor,
-
-\textbf{Windows Domain} and \textbf{Debian/Gentoo Linux VMs}
+\item Deploy/manage \textbf{libvirt}+\textbf{QEMU}+\textbf{KVM} hypervisor, \\ \textbf{Windows Domain} and \textbf{Debian/Gentoo Linux VMs}
 \item Automate IT infrastructure with \textbf{Ansible}
 \item Troubleshooting and user support
 \item Develop FenixEdu integration plugin for \textbf{Moodle} in \textbf{PHP}, \textbf{HTML}, \textbf{JavaScript} and \textbf{CSS}
@@ -140,36 +161,9 @@
 
 \medskip
 
-\cvsection{Skills}
-
-\medskip
-
-\cvtag{Git}
-\cvtag{CI/CD}
-\cvtag{Go}
-\cvtag{C}
-\cvtag{Java}
-\cvtag{Python}
-\cvtag{Bash}\\
-\smallskip
-\cvtag{Linux}
-\cvtag{Ansible}
-\cvtag{Puppet}
-\cvtag{Distributed Tracing}\\
-\smallskip
-\cvtag{Virtualization}
-\cvtag{Embedded Systems}
-\cvtag{Cybersecurity}\\
-\smallskip
-\cvtag{Web Apps}
-\cvtag{Kernel Optimization}
-\cvtag{ARM TrustZone}
-
-\switchcolumn
-
 \cvsection{Education}
 
-\cvevent{M.Sc.\ in Computer Science and Engineering}{IST, Universidade de Lisboa}{Sep 2018 -- Sept 2021}
+\cvevent{M.Sc.\ in Computer Science and Engineering}{IST, Universidade de Lisboa}{Sep 2018 -- Sep 2021}
 \faGraduationCap \hspace{0.05cm} \textbf{Thesis Grade -- 20 out of 20}
 \begin{itemize}
 \item Specialization in \textbf{Cyber-Security} and \textbf{Cyber-physical\\ Systems}
@@ -180,7 +174,7 @@ Implement the 1st \emph{Identity-based Matchmaking Encryption} \textbf{C} librar
 \item Erasmus -- 1 year in Politechnika Lubelska, Poland
 \end{itemize}
 
-\medskip
+\switchcolumn
 
 \cvsection{Languages}
 
@@ -188,30 +182,50 @@ Implement the 1st \emph{Identity-based Matchmaking Encryption} \textbf{C} librar
 \smallskip
 \cvskill{English}{5}
 \smallskip
-\cvskill{German}{2}
-\smallskip
 \cvskill{French}{2}
+\smallskip
+\cvskill{German}{2}
 \smallskip
 \cvskill{Polish}{1}
 
 \medskip
 
-\cvsection{Projects}
+\cvsection{Projects and Hobbies}
+
+\cvsmallevent{Self-Hosted Infrastructure}{Dec 2024 -- Present}
+\small Deploy \textbf{WireGuard}, \textbf{Vaultwarden} and \textbf{Nextcloud} on \textbf{Raspberry Pis} using \textbf{Podman}, \textbf{Ansible}, \textbf{Terraform}, \textbf{Cloudflare}, \textbf{AWS EC2} and \textbf{S3}
+
+\medskip
+
+\cvsmallevent{3D Modeling and Printing}{Aug 2024 -- Present}
+\small Design 3D models of gifts and utilities using \textbf{FreeCAD} and print them on a \textbf{Prusa} 3D printer
+
+\medskip
+
+\cvsmallevent{Polish Choir}{Nov 2023 -- Present}
+\small Member of Polish choir in Saint-Genis-Pouilly -- participate in workshops with composer Hubert Kowalski, perform in masses and concerts
+
+\medskip
 
 \cvsmallevent{Model Rocket}{Aug 2017}
-\small Build and launch R-candy rocket in safe area.
+\small Build and launch R-candy rocket in safe area
 
 \medskip
 
 \cvsmallevent{Model Airplane}{Jun 2014 -- Aug 2016}
-\small Build Hawker Hurricane model with balsa wood.
+\small Build Hawker Hurricane model with balsa wood
 
 \medskip
 
 \cvsmallevent{Smart TV}{Jul 2019}
-\small Build Smart TV with Orange Pi, recycled laptop screen and Kodi.
+\small Build Smart TV with Orange Pi, recycled laptop screen and Kodi
 
 \cvsection{Volunteering}
+
+\cvsmallevent{Théâtre for a Cause Geneva}{Oct 2023}
+\small Sell tickets, drinks and snacks at the Théâtre des Grottes
+
+\medskip
 
 \cvsmallevent{VPN Setup}{Sep 2021 -- Nov 2021}
 \small Setup VPN between INESC-ID and AMA with \textbf{pfSense} as part of a European project (DE4A)
@@ -219,22 +233,22 @@ Implement the 1st \emph{Identity-based Matchmaking Encryption} \textbf{C} librar
 \medskip
 
 \cvsmallevent{Counselor at Catholic Summer Camp}{Jul 2018}
-\small Organize activities for children from 12 to 15 years old.
+\small Organize activities for children from 12 to 15 years old
 
 \medskip
 
 \cvsmallevent{Karate Instructor at ANAM}{Sep 2013 -- Mar 2015}
-\small Teach Karate to children from 5 to 12 years old.
+\small Teach Karate to children from 5 to 12 years old
 
 \medskip
 
 \cvsmallevent{Tutor}{Sep 2016 -- Jun 2017}
-\small Teach math and Portuguese to children with learning difficulties.
+\small Teach math and Portuguese to children with learning difficulties
 
 \medskip
 
 \cvsmallevent{Build and Repair computers}{Sep 2014 -- Apr 2015}
-\small Repair computer for hospitalized children of Abrantes Hospital to play; Build and offer computer to Constância's parish.
+\small Repair computer for hospitalized children of Abrantes Hospital to play; Build and offer computer to Constância's parish
 
 \end{paracol}
 
