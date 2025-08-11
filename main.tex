@@ -16,7 +16,7 @@
 %% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
 
 % Change the page layout if you need to
-\geometry{left=1cm,right=1cm,top=1cm,bottom=1cm,columnsep=1cm}
+\geometry{left=0.8cm,right=0.8cm,top=0.8cm,bottom=0.8cm,columnsep=0.8cm}
 
 % The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
@@ -53,7 +53,6 @@
 
 % Change some fonts, if necessary
 \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
-\renewcommand{\personalinfofont}{\footnotesize}
 \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
 \renewcommand{\cvsubsectionfont}{\large\bfseries}
 
@@ -63,15 +62,17 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
+\usepackage[none]{hyphenat}
+
 \begin{document}
 \name{Vasco Guita}
-\tagline{Computer Science and Engineering M.Sc. Student}
+\tagline{Software Engineer}
 \photoR{2.8cm}{vasco}
 
 \personalinfo{
   \email{vasco@guita.org}
-  \phone{+351 961 472 807}
-  \location{Lisbon, Portugal}
+  \phone{+41 78 329 55 20}
+  \location{Geneva, Switzerland}
   \linkedin{vasco-guita}
   \github{vascoguita}
 }
@@ -88,136 +89,166 @@
 \begin{paracol}{2}
 \cvsection{Experience}
 
-\cvevent{Full Stack Developer}{MARETEC}{February 2021 -- Ongoing}{}
+\cvevent{Software Engineer -- ORIGIN}{BE-CEM-IN, CERN}{Jan 2025 -- Present}
 \begin{itemize}
-\item Develop QGIS plugin in Python and Qt
-\item Create bathymetries with the MOHID model
+\item Package \textbf{Debian} drivers, libraries and tools for \textbf{Front End Computers}
+\item Build \textbf{Docker} images for compiling, testing and packaging drivers for \textbf{FECOS} (\textbf{Debian}-based OS)
+\item Map \textbf{VME SBC} cards to \textbf{PCI} devices -- \textbf{PMC} and \textbf{XMC}
+\item Configure \textbf{LUMENS} (CERN's \textbf{Systemd} wrapper) in \textbf{CCDE}  
+\item Deploy \textbf{HIL} infrastructure with \textbf{Terraform}, \textbf{Ansible}, \\ \textbf{OpenStack} and \textbf{S3}
 \end{itemize}
 \divider
 
-\cvevent{Lecturer}{Instituto Superior Técnico}{September 2020 to February 2021 -- MEIC%\footnotemark[1]
-  \\
-  February 2019 to July 2019 -- LETI%\footnotemark[2]
-  }{}
-%\footnotetext[1]{M.Sc. program in Computer Science and Engineering}
-%\footnotetext[2]{B.Sc. program in Telecommunications and Informatics Engineering}
+\cvevent{Software Engineer -- ORIGIN}{BE-CEM-EDL, CERN}{Apr 2023 -- Dec 2024}
 \begin{itemize}
-\item Lecture Network and Computer Security lab. classes
+\item Modernize \textbf{Open Hardware Repository (OHR)} in \\ collaboration with \textbf{OSPO} -- migrate projects to GitLab, decommission self-hosted GitLab server, develop website in \textbf{Python}, \textbf{Hugo} and \textbf{GitHub Pages} and setup GitLab \textbf{OAuth2} authentication in \textbf{Discourse}
+\item Introduce management tools to the section leader and arrange cross-section meetings to share project and team coordination methods
+\item Develop \textbf{Evergreen} to streamline software and gateware workflows with \textbf{GitLab CI/CD}, \textbf{Bash}/\textbf{Python} automation, \textbf{GitLab Runners}, \textbf{Docker} and \textbf{Xilinx Vivado/ISE}
+\item Contribute to \textbf{SAMbuCa} -- write \textbf{Tcl} scripts to synthesize \textbf{gateware} and build boot images with \textbf{Xilinx Vivado}, write \textbf{firmware} and \textbf{PXIe} \textbf{Linux drivers} in \textbf{C} and \textbf{Python} and test signal acquisition and motor control \textbf{FMCs} on \textbf{Spexi7u} boards with oscilloscopes and thermal cameras
+\end{itemize}
+\divider
+
+\cvevent{Software Engineer -- PJAS}{IT-SD-GSS, CERN}{Oct 2021 -- Mar 2023}
+\begin{itemize}
+\item Instrument \textbf{REVA} with \textbf{OpenTelemetry} in \textbf{Go}
+\item Deploy \textbf{Jaeger tracing} with \textbf{Elasticsearch} and \textbf{Kibana} dashboards for \textbf{CERNBox} and setup \textbf{Jaeger Query} with \textbf{CERN SSO}
+\item Present \emph{Jaeger tracing at CERN} at \textbf{IT Lightning Talks \#22}
+\item Develop IFC viewer plugin for \textbf{ownCloud} in \textbf{Vue.js}
+\item DevOps with \textbf{Puppet}, \textbf{Foreman}, \textbf{OpenStack} and \textbf{ai-tools}
+\item Package \textbf{RPMs} for \textbf{yum} with \textbf{Gitlab CI/CD}
+\item Setup \textbf{GitHub Actions} for \textbf{CS3Org} projects -- code quality, releases, \textbf{Docker} builds, security scans and tests with \textbf{Docker Compose}, \textbf{EOS}, \textbf{Ceph} and \textbf{Redis}
+\item Manage \textbf{Drone CI} and deploy \textbf{GitHub} self-hosted runners
+\item Create \textbf{EOS} \textbf{Docker} image with \textbf{MQ}, \textbf{QDB}, \textbf{MGM} and \textbf{FST}
+\item \textbf{ROTA} -- \textbf{CERNBox} and \textbf{EOS} support
+\item Recover \textbf{EOS} files with \textbf{CBack} -- \textbf{Restic}, \textbf{S3}, \textbf{Ceph}
+\end{itemize}
+
+\switchcolumn
+
+\cvevent{Software Developer}{MARETEC}{Feb 2021 -- Sep 2021}
+\begin{itemize}
+\item Develop bathymetry plugin for \textbf{QGIS} in \textbf{Python} and \textbf{Qt}
+\end{itemize}
+\divider
+
+\cvevent{Teaching Assistant}{IST, Universidade de Lisboa}{Feb 2019 -- Feb 2021}
+\faAward \hspace{0.05cm} \textbf{Excellence in Teaching Award}
+\smallskip
+\begin{itemize}
+\item Lecture Network and Computer Security lab classes
 \item Evaluate course project and class problems
-\item Help students in office hours
+\item Support students in office hours
 \end{itemize}
 \divider
 
-\cvevent{System Administrator}{Instituto Superior Técnico}{December 2017 to September 2019 -- DEI%\footnotemark[3]
-  \\
-  March 2019 to August 2019 -- DEEC%\footnotemark[4]
-  }{}
-%\footnotetext[3]{Department of Computer Science and Engineering}
-%\footnotetext[4]{Department of Electrical and Computer Engineering}
+\cvevent{System Administrator}{IST, Universidade de Lisboa}{Dec 2017 -- Sep 2019}
 \begin{itemize}
-\item Deploy and administer libvirt+QEMU+KVM hypervisor, Windows Domain, Linux VMs and Moodle
-\item Develop Moodle plugin and configure OAuth
-\item Automate IT infrastructure with Ansible
+\item Deploy/manage \textbf{libvirt}+\textbf{QEMU}+\textbf{KVM} hypervisor, \\ \textbf{Windows Domain} and \textbf{Debian/Gentoo Linux VMs}
+\item Automate IT infrastructure with \textbf{Ansible}
 \item Troubleshooting and user support
+\item Develop FenixEdu integration plugin for \textbf{Moodle} in \textbf{PHP}, \textbf{HTML}, \textbf{JavaScript} and \textbf{CSS}
+\item Deploy 5 \textbf{Moodle} instances with FenixEdu \textbf{OAuth}
+\item Deploy \textbf{DokuWiki} with FenixEdu \textbf{OAuth}
+\item Hardware maintenance
 \end{itemize}
 \divider
 
-\cvevent{Repair Technician}{Worten}{October 2017 to December 2017}{}
+\cvevent{Repair Technician}{Worten}{Oct 2017 -- Dec 2017}
 \begin{itemize}
 \item Repair computers and smartphones
-\item Costumer service
+\item After-sales service -- aid unsatisfied customers
 \end{itemize}
 
 \medskip
 
 \cvsection{Education}
 
-\cvevent{M.Sc.\ in Computer Science and Engineering}{Instituto Superior Tecnico }{Sept 2018 -- Ongoing}{}
-\small Thesis -- Secure sharing of ARM TrustZone trusted storage data.
-
-%\divider
-
-%\cvevent{B.Sc.\ in Computer Science and Engineering}{Instituto Superior Tecnico }{Sept 2015 -- June 2018}{}
-
-\medskip
-
-\cvsection{Skills}
-
-\medskip
-
-\cvtag{Embedded Systems}
-\cvtag{Cybersecurity}
-\cvtag{Web Applications}
-
-\medskip\divider\medskip
-
-\cvtag{C}
-\cvtag{Python}
-\cvtag{Git}
-\cvtag{Linux}
-\cvtag{Ansible}
-\cvtag{ARM TrustZone}
-\cvtag{OP-TEE}
+\cvevent{M.Sc.\ in Computer Science and Engineering}{IST, Universidade de Lisboa}{Sep 2018 -- Sep 2021}
+\faGraduationCap \hspace{0.05cm} \textbf{Thesis Grade -- 20 out of 20}
+\begin{itemize}
+\item Specialization in \textbf{Cyber-Security} and \textbf{Cyber-physical\\ Systems}
+\item Thesis -- \emph{Data Recovery for Hardware Security Extensions}; Design a recoverable and shareable \textbf{trusted storage} \\ system for \textbf{ARM TrustZone};
+Implement a prototype in \textbf{C} and \textbf{Assembly} and evaluate it on \textbf{Raspberry Pis} with \textbf{TF-A}, \textbf{U-Boot}, \textbf{OP-TEE} and \textbf{Buildroot Linux};
+Implement the 1st \emph{Identity-based Matchmaking Encryption} \textbf{C} library
+\item Publish/present paper -- V. Guita et al. Anonymous\\ Trusted Data Relocation for TEEs. In \emph{IFIP International Conference on ICT Systems Security and Privacy Protection}, pages 449–466. Springer, 2022
+\item Erasmus -- 1 year in Politechnika Lubelska, Poland
+\end{itemize}
 
 \switchcolumn
-
-\cvsection{Projects}
-
-\cvevent{Smart Coffee Machine}{}{March 2021 -- Ongoing}{}
-{\small Remotely control Nespresso machine with ESP32-S2 MCU and set alarm to wake up the user with a cup of coffee.}
-
-\divider
-
-\cvevent{Smart TV}{}{July 2019}{}
-\small Create Smart TV with Orange Pi and LibreELEC.
-
-\divider
-
-\cvevent{Model Rocket}{}{August 2017}{}
-\small Build and launch R-candy rocket in safe area.
-
-\divider
-
-\cvevent{Model Airplane}{}{2014 -- Ongoing}{}
-\small Build Hawker Hurricane model with balsa wood.
 
 \cvsection{Languages}
 
 \cvskill{Portuguese}{5}
-\divider
-
-\cvskill{English}{4}
-\divider
-
+\smallskip
+\cvskill{English}{5}
+\smallskip
+\cvskill{French}{2}
+\smallskip
 \cvskill{German}{2}
-\divider
-
+\smallskip
 \cvskill{Polish}{1}
+
+\medskip
+
+\cvsection{Projects and Hobbies}
+
+\cvsmallevent{Self-Hosted Infrastructure}{Dec 2024 -- Present}
+\small Deploy \textbf{WireGuard}, \textbf{Vaultwarden} and \textbf{Nextcloud} on \textbf{Raspberry Pis} using \textbf{Podman}, \textbf{Ansible}, \textbf{Terraform}, \textbf{Cloudflare}, \textbf{AWS EC2} and \textbf{S3}
+
+\medskip
+
+\cvsmallevent{3D Modeling and Printing}{Aug 2024 -- Present}
+\small Design 3D models of gifts and utilities using \textbf{FreeCAD} and print them on a \textbf{Prusa} 3D printer
+
+\medskip
+
+\cvsmallevent{Polish Choir}{Nov 2023 -- Present}
+\small Member of Polish choir in Saint-Genis-Pouilly -- participate in workshops with composer Hubert Kowalski, perform in masses and concerts
+
+\medskip
+
+\cvsmallevent{Model Rocket}{Aug 2017}
+\small Build and launch R-candy rocket in safe area
+
+\medskip
+
+\cvsmallevent{Model Airplane}{Jun 2014 -- Aug 2016}
+\small Build Hawker Hurricane model with balsa wood
+
+\medskip
+
+\cvsmallevent{Smart TV}{Jul 2019}
+\small Build Smart TV with Orange Pi, recycled laptop screen and Kodi
 
 \cvsection{Volunteering}
 
-\cvevent{Counsellor at Catholic Summer Camp}{}{July 2018}{}
-\small Organize activities for children from 12 to 15 years old.
+\cvsmallevent{Théâtre for a Cause Geneva}{Oct 2023}
+\small Sell tickets, drinks and snacks at the Théâtre des Grottes
 
-\divider
+\medskip
 
-\cvevent{Karate Instructor at ANAM}{}{September 2013 -- March 2015}{}
-\small Teach Karate to children from 5 to 12 years old.
+\cvsmallevent{VPN Setup}{Sep 2021 -- Nov 2021}
+\small Setup VPN between INESC-ID and AMA with \textbf{pfSense} as part of a European project (DE4A)
 
-\divider
+\medskip
 
-\cvevent{Tutor}{}{September 2016 -- June 2017}{}
-\small Teach maths and portuguese to children with learning difficulties.
+\cvsmallevent{Counselor at Catholic Summer Camp}{Jul 2018}
+\small Organize activities for children from 12 to 15 years old
 
-\divider
+\medskip
 
-\cvevent{Computer Repair}{}{April 2015}{}
-\small Computer repair for Abrantes Hospital for hospitalized children to play.
+\cvsmallevent{Karate Instructor at ANAM}{Sep 2013 -- Mar 2015}
+\small Teach Karate to children from 5 to 12 years old
 
-%\divider
+\medskip
 
-%\cvevent{Computer Assembly}{}{September 2014}{}
-%\small Computer assembly and offer to the local parish.
+\cvsmallevent{Tutor}{Sep 2016 -- Jun 2017}
+\small Teach math and Portuguese to children with learning difficulties
+
+\medskip
+
+\cvsmallevent{Build and Repair computers}{Sep 2014 -- Apr 2015}
+\small Repair computer for hospitalized children of Abrantes Hospital to play; Build and offer computer to Constância's parish
 
 \end{paracol}
 
