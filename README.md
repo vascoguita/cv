@@ -1,11 +1,12 @@
 # Curriculum Vitae
 
-This repository holds my CV written in LaTeX on the [AltaCV Template](https://www.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv).
+This repository contains my CV written in LaTeX.
 
 ## Compile to PDF
 
-Compile the sources to a PDF file by running the following command on the project directory:
+Compile the sources to a PDF file by running the following command on the
+project directory:
 
 ```shell
-pdflatex main.tex
+pdflatex cv.tex
 ```
