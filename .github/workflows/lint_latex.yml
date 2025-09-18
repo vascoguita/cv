@@ -1,4 +1,8 @@
 ---
+# SPDX-FileCopyrightText: 2025 Vasco Guita <vasco@guita.org>
+#
+# SPDX-License-Identifier: MIT
+
 name: Lint LaTeX document
 on: [push, workflow_dispatch]
 permissions:
