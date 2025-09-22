@@ -3,20 +3,19 @@
 #
 # SPDX-License-Identifier: MIT
 
-name: Build LaTeX document
+name: Build
 on: [push, workflow_dispatch]
 permissions:
   contents: read
 jobs:
-  build_latex:
+  build:
     runs-on: ubuntu-latest
+    container: texlive/texlive:latest
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: cv.tex
+      - name: Build PDF document
+        run: make build
       - uses: actions/upload-artifact@v4
         with:
           path: cv.pdf
