@@ -6,6 +6,11 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 # Curriculum Vitae
 
+[![License CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-yellow.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Build](https://github.com/vascoguita/cv/actions/workflows/build.yml/badge.svg)](https://github.com/vascoguita/cv/actions/workflows/build.yml)
+[![Lint](https://github.com/vascoguita/cv/actions/workflows/lint.yml/badge.svg)](https://github.com/vascoguita/cv/actions/workflows/lint.yml)
+
 This repository contains my CV written in LaTeX.
 
 ## Build
@@ -22,12 +27,4 @@ Run lint checks with:
 
 ```shell
 make test
-```
-
-## Cleaning
-
-Remove all generated files with:
-
-```shell
-make clean
 ```
