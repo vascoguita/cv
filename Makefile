@@ -3,13 +3,13 @@
 # SPDX-License-Identifier: MIT
 
 .PHONY: all
-all: build test
+all: test build
 
 .PHONY: build
 build: cv.pdf
 
 cv.pdf: cv.tex
-	pdflatex -interaction=nonstopmode -halt-on-error cv.tex
+	latexmk -pdf cv.tex
 
 .PHONY: test
 test: lint-latex lint-md lint-make lint-license
