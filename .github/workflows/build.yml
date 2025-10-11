@@ -67,4 +67,4 @@ jobs:
           package-name: cv
           package-type: 'container'
           ignore-versions: '^(latest|v.*)$'
-          min-versions-to-keep: 0
+          min-versions-to-keep: 1
