@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
         with:
@@ -46,7 +46,7 @@ jobs:
     needs: docker
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - name: Build PDF
         run: make
       - uses: actions/upload-artifact@v5
