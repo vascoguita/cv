@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: MIT
 
-FROM debian:13.3-slim
+FROM debian:13.4-slim
 
 ADD https://github.com/checkmake/checkmake/releases/download/0.2.2/checkmake-0.2.2.linux.amd64 \
     /usr/local/bin/checkmake
