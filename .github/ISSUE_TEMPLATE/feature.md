@@ -1,8 +1,4 @@
 ---
-# SPDX-FileCopyrightText: 2025 Vasco Guita <vasco@guita.org>
-#
-# SPDX-License-Identifier: CC-BY-SA-4.0
-
 name: Request a feature
 about: Suggest a new feature or enhancement
 title: '[FEAT] '

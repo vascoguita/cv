@@ -1,8 +1,4 @@
 ---
-# SPDX-FileCopyrightText: 2025 Vasco Guita <vasco@guita.org>
-#
-# SPDX-License-Identifier: CC-BY-SA-4.0
-
 name: Report a bug
 about: Report a bug to help us improve
 title: '[BUG] '

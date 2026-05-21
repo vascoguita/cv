@@ -1,7 +1,3 @@
-# SPDX-FileCopyrightText: 2025 Vasco Guita <vasco@guita.org>
-#
-# SPDX-License-Identifier: MIT
-
 .PHONY: all
 all: test build
 
@@ -12,7 +8,7 @@ cv.pdf: cv.tex
 	latexmk -pdf cv.tex
 
 .PHONY: test
-test: lint-latex lint-md lint-make lint-license
+test: lint-latex lint-md lint-make
 
 .PHONY: lint-latex
 lint-latex:
@@ -25,10 +21,6 @@ lint-md:
 .PHONY: lint-make
 lint-make:
 	checkmake Makefile
-
-.PHONY: lint-license
-lint-license:
-	reuse lint
 
 .PHONY: clean
 clean:
