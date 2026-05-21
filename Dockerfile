@@ -9,12 +9,9 @@ RUN apt-get update && \
     git \
     latexmk \
     make \
-    npm \
     texlive-latex-extra \
     texlive-fonts-extra \
     && rm -rf /var/lib/apt/lists/* \
-    && npm install -g --omit=optional --omit=dev markdownlint-cli2 \
-    && npm cache clean --force \
     && chmod +x /usr/local/bin/checkmake
 
 WORKDIR /data

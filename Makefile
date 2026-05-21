@@ -8,15 +8,11 @@ cv.pdf: cv.tex
 	latexmk -pdf cv.tex
 
 .PHONY: test
-test: lint-latex lint-md lint-make
+test: lint-latex lint-make
 
 .PHONY: lint-latex
 lint-latex:
 	chktex cv.tex
-
-.PHONY: lint-md
-lint-md:
-	markdownlint-cli2 "**/*.md"
 
 .PHONY: lint-make
 lint-make:

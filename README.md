@@ -28,9 +28,8 @@ docker run -v $(pwd):/data cv
 ### Using Make
 
 **Requirements**:
-[TeX Live](https://www.tug.org/texlive),
-[checkmake](https://github.com/mrtazz/checkmake), and
-[markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2).
+[TeX Live](https://www.tug.org/texlive) and
+[checkmake](https://github.com/mrtazz/checkmake).
 
 Build the PDF file with:
 
