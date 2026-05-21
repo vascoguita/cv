@@ -12,17 +12,10 @@ This repository contains my CV written in LaTeX.
 
 ### Using Docker (Recommended)
 
-Build the PDF file with a pre-built image from GitHub Container Registry:
+Build the PDF file with the official TeX Live image:
 
 ```shell
-docker run -v $(pwd):/data ghcr.io/vascoguita/cv:latest
-```
-
-Alternatively, build the Docker image locally and use it to build the PDF file:
-
-```shell
-docker build -t cv .
-docker run -v $(pwd):/data cv
+docker run -v $(pwd):/data -w /data texlive/texlive:latest make
 ```
 
 ### Using Make
