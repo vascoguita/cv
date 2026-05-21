@@ -3,7 +3,7 @@ on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: texlive/texlive:latest
+    container: texlive/texlive:latest@sha256:c8bb7e17f1391b584457701a594f1c2433c37f804f6566ad8b3f881298118846
     permissions:
       contents: write
     steps:
