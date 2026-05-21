@@ -15,15 +15,15 @@ This repository contains my CV written in LaTeX.
 Build the PDF file with the official TeX Live image:
 
 ```shell
-docker run -v $(pwd):/data -w /data texlive/texlive:latest make
+docker run -v $(pwd):/data -w /data texlive/texlive:latest latexmk -pdf cv.tex
 ```
 
-### Using Make
+### Locally
 
 **Requirements**: [TeX Live](https://www.tug.org/texlive).
 
 Build the PDF file with:
 
 ```shell
-make
+latexmk -pdf cv.tex
 ```
