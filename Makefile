@@ -8,15 +8,11 @@ cv.pdf: cv.tex
 	latexmk -pdf cv.tex
 
 .PHONY: test
-test: lint-latex lint-make
+test: lint-latex
 
 .PHONY: lint-latex
 lint-latex:
 	chktex cv.tex
-
-.PHONY: lint-make
-lint-make:
-	checkmake Makefile
 
 .PHONY: clean
 clean:

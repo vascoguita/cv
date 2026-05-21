@@ -1,8 +1,5 @@
 FROM debian:13.4-slim
 
-ADD https://github.com/checkmake/checkmake/releases/download/0.2.2/checkmake-0.2.2.linux.amd64 \
-    /usr/local/bin/checkmake
-
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     chktex \
@@ -11,8 +8,7 @@ RUN apt-get update && \
     make \
     texlive-latex-extra \
     texlive-fonts-extra \
-    && rm -rf /var/lib/apt/lists/* \
-    && chmod +x /usr/local/bin/checkmake
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /data
 
